@@ -1,0 +1,89 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url("https://st.depositphotos.com/1897095/1642/i/450/depositphotos_16428473-stock-photo-fog-and-pastel-gradient.jpg");
+    background-size: 100%;
+
+    
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: green;
+    border-color: greenyellow;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+    border-color: #004085;
+}
+
+.animate__animated.animate__fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.animate__animated.animate__zoomIn {
+    animation-name: zoomIn;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

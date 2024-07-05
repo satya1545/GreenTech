@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Details</title>
+  <link rel="stylesheet" href="style5.css">
+  <style>
+    body {
+            width: auto;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            justify-content: center;
+            background-color:white
+        }
+ 
+ div {
+            text-align: center;
+            width: 50%;
+            height: auto;
+            background-color: rgba(20, 220, 43, 0.267);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 3px solid rgb(106, 23, 23);
+        }
+  </style>
+</head>
+<body>
+    <div>
+  <h1>Order Details</h1>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const Fullname = urlParams.get('Fullname');
+    const Email = urlParams.get('Email');
+    const Address = urlParams.get('Address');
+    const Phone = urlParams.get('Phone');
+    const Plantname = urlParams.get('Plantname');
+    const Quantity = urlParams.get('Quantity');
+    
+    
+    if (Fullname && Email && Address && Phone && Plantname) {
+      document.write(`<p>Fullname: ${Fullname}</p>`);
+      document.write(`<p>Email: ${Email}</p>`);
+      document.write(`<p>Address: ${Address}</p>`);
+      document.write(`<p>Phone: ${Phone}</p>`);
+      document.write(`<p>Plantname: ${Plantname}</p>`);
+      document.write(`<p>Quantity: ${Quantity}</p>`);
+      
+    } else {
+      document.write('<p>Error: Order details not found.</p>');
+    }
+  </script>
+  </div>
+</body>
+</html>

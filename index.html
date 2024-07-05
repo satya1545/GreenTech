@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>GREEN TECH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body style="background-color: white;">
+    <!--Header section starts-->
+    <header>
+        <div class="header-1">
+            <div class="share">
+                <span>Follow us:</span>
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+            </div>
+            <div class="share">
+                <span>Call us:</span>
+                <a href="#">899897678</a>
+            </div>
+        </div>
+        <div class="header-2">
+            <a href="#" class="logo"><i class="fas fa-seedling"></i>GREEN TECH</a>
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="Search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        </div>
+        <div class="header-3">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="nav-bar">
+                <a href="#Home">Home</a>
+                
+                <a href="#Product">Product</a>
+                <a href="#Deal">Deal</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+            <div class="icons">
+                <button class="fas fa-shopping-cart" id="cart-btn" onclick="cartclick()"></button>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-user" id="login-btn"></a>
+            </div>
+            <!--cart container starts-->
+            <div class="cart-items-container" id="cart-items-container">
+                <a href="#" class="btn">Checkout now</a>
+                
+            </div>
+            <!--cart container ends-->
+        </div>
+    </header>
+    <!--Header section ends-->
+    <!--user login-->
+    <div class="login-form-container">
+        <form action="">
+            <div id="close-login-btn" class="fas fa-close"></div>
+            <h3>Sign in</h3>
+            <span>Username</span>
+            <input type="email" class="box" name="" placeholder="Enter your username...">
+            <span>Password</span>
+            <input type="password" class="box" name="" placeholder="Enter your password...">
+            <div class="check-box">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <input type="submit" value="Sign in" class="btn">
+            <p>Forget password?<a href="#">click here</a></p>
+            <p>Don't have an account ? <a href="#">Sign up</a></p>
+        </form>
+    </div>
+    <!--user login ends-->
+
+    <!--Home section starts-->
+    <section class="Home" id="Home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box" style="background:url(slider1.jpg);">
+                        <div class="content">
+                            <span>Upto 75% off</span>
+                            <h3>Plant big sale special offer</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background:url(slider2.jpg);">
+                        <div class="content">
+                            <span>Upto 45% off</span>
+                            <h3>Plant big sale special offer</h3>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background:url(slider3.jpg);">
+                        <div class="content">
+                            <span>Upto 15% off</span>
+                            <h3>Plant big sale special offer</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--Home section ends-->
+    <!--banner section start-->
+    <section class="product" id="Product">
+        <h1 class="heading">Indoor plants</h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="product1.jpg" alt="">
+                <h3>peace lily</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq1">
+                </div>
+                <div class="price">
+                    ₹14.70<span> ₹18.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p1', 'productq1')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product2.jpg" alt="">
+                <h3> spider plant</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq2">
+                </div>
+                <div class="price">
+                    ₹12.00<span> ₹14.00</span>
+                </div>
+                <button class="btn" onclick="productfunc('p2', 'productq2')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product3.jpg" alt="">
+                <h3>Golden Pothos</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq3">
+                </div>
+                <div class="price">
+                    ₹16.70<span> ₹18.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p3', 'productq3')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product4.jpg" alt="">
+                <h3> parlor palm</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq4">
+                </div>
+                <div class="price">
+                    ₹22.70<span> ₹28.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p4', 'productq4')">Add to cart</button>
+            </div>
+           
+        </div>
+    </section>
+    <!--category section ends-->
+    <!--product section starts-->
+    <section class="product" id="Product">
+        <h1 class="heading">office plants</h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product5.jpg" alt="">
+                <h3>Snake plant</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq5">
+                </div>
+                <div class="price">
+                    ₹14.70<span> ₹18.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p5', 'productq5')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product6.jpg" alt="">
+                <h3> African violets</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq6">
+                </div>
+                <div class="price">
+                    ₹12.00<span> ₹14.00</span>
+                </div>
+                <button class="btn" onclick="productfunc('p6', 'productq6')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product7.jpg" alt="">
+                <h3>ZZ Plant</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq7">
+                </div>
+                <div class="price">
+                    ₹16.70<span> ₹18.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p7', 'productq7')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product8.jpg" alt="">
+                <h3> String of pearls</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq8">
+                </div>
+                <div class="price">
+                    ₹22.70<span> ₹28.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p8', 'productq8')">Add to cart</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- <qqq></qqq> -->
+    <section class="product" id="Product">
+        <h1 class="heading">Garden plants </h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product9.jpg" alt="">
+                <h3>Multi Rose</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq9">
+                </div>
+                <div class="price">
+                    ₹14.70<span> ₹18.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p9', 'productq9')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product10.jpg" alt="">
+                <h3> Hibiscus</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq10">
+                </div>
+                <div class="price">
+                    ₹12.00<span> ₹14.00</span>
+                </div>
+                <button class="btn" onclick="productfunc('p10', 'productq10')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product11.jpg" alt="">
+                <h3>jasmine</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq11">
+                </div>
+                <div class="price">
+                    ₹16.70<span> ₹18.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p11', 'productq11')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product12.jpg" alt="">
+                <h3> marigold</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq4">
+                </div>
+                <div class="price">
+                    ₹22.70<span> ₹28.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p12', 'productq12')">Add to cart</button>
+            </div>
+            
+        </div>
+    </section>
+    <section class="product" id="Product">
+        <h1 class="heading">ornamental Plants</h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product13.jpg" alt="">
+                <h3>Orchids</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq13">
+                </div>
+                <div class="price">
+                    ₹14.70<span> ₹18.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p13', 'productq13')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product14.jpg" alt="">
+                <h3> Anthurium</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq14">
+                </div>
+                <div class="price">
+                    ₹12.00<span> ₹14.00</span>
+                </div>
+                <button class="btn" onclick="productfunc('p14', 'productq14')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product15.jpg" alt="">
+                <h3>Chrysanthemums</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq15">
+                </div>
+                <div class="price">
+                    ₹16.70<span> ₹18.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p15', 'productq15')">Add to cart</button>
+            </div>
+            <div class="box">
+                <span class="discount">45%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="https://web.whatsapp.com/" class="fas fa-share"></a>
+                    
+                </div>
+                <img src="product16.jpg" alt="">
+                <h3> Dalias plant</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>Quantity:</span>
+                    <input type="number" min="1" max="100" value="1" id="productq16">
+                </div>
+                <div class="price">
+                    ₹22.70<span> ₹28.99</span>
+                </div>
+                <button class="btn" onclick="productfunc('p16', 'productq16')">Add to cart</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--product section ends-->
+    <!--deal section starts-->
+    <section class="deal" id="Deal">
+
+        <h1 class="heading"> deal of the day </h1>
+
+        <div class="row">
+
+            <div class="content">
+                <h3 class="title">don't miss the deal</h3>
+                
+                <div class="count-down">
+                    <div class="box">
+                        <h3 id="day">20</h3>
+                        <span>day</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="hour">20</h3>
+                        <span>hour</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="minute">20</h3>
+                        <span>minute</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="second">20</h3>
+                        <span>second</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="image">
+                <img src="deal-img.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- deal section ends -->
+    <!-- contact section starts  -->
+
+    <section class="contact" id="Contact">
+
+        <h1 class="heading">get in touch</h1>
+
+        <div class="row">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.1745337495863!2d78.43861427521504!3d17.594445083328516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b8eae5cd739%3A0x2aa927e931d97eee!2sMLR%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1718997632527!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" required>
+                    <label>name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" required>
+                    <label>email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="number" required>
+                    <label>number</label>
+                </div>
+                <div class="inputBox">
+                    <textarea required name=""  cols="30" rows="10"></textarea>
+                    <label>message</label>
+                </div>
+
+               <a href="response.html"><input type="submit" value="send message" class="btn"></a> 
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                
+                <p></p>
+               
+            </div>
+            
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#Home">home</a>
+                
+                <a href="#Product">product</a>
+                <a href="#Deal">deal</a>
+                <a href="#Contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                
+                <a href="https://www.instagram.com/">instagram</a>
+                <a href="">linked</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> created by <span> PV </span> | all rights reserved! </h1>
+
+    </section>
+
+    <!--footer section ends-->
+    <!--swiper js link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--js link-->
+    <script src="script.js"></script>
+    <script>
+        let productDetails = {
+            "p1": { name: "Peace Lily", price: 14.70, image: "product1.jpg" },
+            "p2": { name: " Spider Plant", price: 12.00, image: "product2.jpg" },
+            "p3": { name: " Golden Pothos", price: 16.70, image: "product3.jpg" },
+            "p4": { name: " Parlor Palm", price: 22.70, image: "product4.jpg" },
+            "p5": { name: " Snake Plant", price: 14.70, image: "product5.jpg" },
+            "p6": { name: " African Violets", price: 12.00, image: "product6.jpg" },
+            "p7": { name: " ZZ Plant", price: 16.70, image: "product7.jpg" },
+            "p8": { name: " String Of Pearls", price: 22.70, image: "product8.jpg" },
+            "p9": { name: " Multi Rose", price: 14.70, image: "product9.jpg" },
+            "p10": { name: " Hibiscus", price: 12.00, image: "product10.jpg" },
+            "p11": { name: " Jasmine", price: 16.70, image: "product11.jpg" },
+            "p12": { name: " Marigold", price: 22.70, image: "product12.jpg" },
+            "p13": { name: " Orchids", price: 14.70, image: "product13.jpg" },
+            "p14": { name: " Anthurium", price: 12.00, image: "product14.jpg" },
+            "p15": { name: " Chrysanthemums", price: 16.70, image: "product15.jpg" },
+            "p16": { name: "Dalias Plant", price: 22.70, image: "product16.jpg" }
+        };
+
+        function cartclick() {
+            let cartItemsContainer = document.getElementById('cart-items-container');
+            cartItemsContainer.classList.toggle('active');
+        }
+
+        function productfunc(productId, quantityId) {
+            let quantity = document.getElementById(quantityId).value;
+            let product = productDetails[productId];
+            addToCart(productId, product.name, product.price, product.image, quantity);
+        }
+
+        function addToCart(productId, name, price, image, quantity) {
+            let cartItemsContainer = document.getElementById('cart-items-container');
+            let existingItem = document.getElementById(`cart-item-₹{productId}`);
+
+            if (existingItem) {
+                let itemQuantity = existingItem.querySelector('.cart-item-quantity');
+                itemQuantity.innerText = parseInt(itemQuantity.innerText) + parseInt(quantity);
+            } else {
+                let cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.id = `cart-item-${productId}`;
+                cartItem.innerHTML = `
+                    <span class="fas fa-times" onclick="removeFromCart('${productId}')"></span>
+                    <img src="${image}" alt="">
+                    <div class="content">a
+                        <h3>${name}</h3>
+                        <div class="price">₹${price} <span> x <span class="cart-item-quantity">${quantity}</span></span></div>
+                    </div>
+                    <div class="content">
+                        <h3>Total price</h3>
+                        <div class="price">₹${price * quantity} <span> </div>
+                    </div>
+                    <div class="cart-container">
+                    <img src="cart-icon.png" alt="">
+                   
+                        <a href="index2.html "><button class="buy-button" style="height:20px;width:100px">Buy</button></a> 
+                    
+                   
+                </div>
+                
+                `;
+                cartItemsContainer.appendChild(cartItem);
+            }
+            
+
+            cartItemsContainer.classList.toggle('active');
+        }
+        
+
+        function removeFromCart(productId) {
+            let cartItem = document.getElementById(`cart-item-${productId}`);
+            if (cartItem) {
+                cartItem.remove();
+            }
+        }
+    </script>
+</body>
+
+</html>
