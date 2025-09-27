@@ -1,3 +1,4 @@
+Green Tech Host Website:= https://idyllic-frangipane-152b68.netlify.app/
 Green Tech – E-commerce Platform for Plants 🌱
 Project Overview
 Green Tech is an e-commerce website designed for plant enthusiasts to explore, select, and purchase a variety of plants and gardening supplies. The platform provides a seamless shopping experience with a user-friendly interface, product catalog, shopping cart, and secure payment integration.
